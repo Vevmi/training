@@ -5,8 +5,11 @@ while (userNum !== random) {
   userNum = +prompt('Попробуй еще раз:');
   if (userNum > random) {
     alert('Бери меньше');
-  } else {
+  } else if (userNum < random) {
     alert('Бери больше');
+  } else {
+    alert('Молодец! Угадала))');
   }
+
 }
-alert('Молодец! Угадала))');
+
